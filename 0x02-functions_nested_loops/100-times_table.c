@@ -3,11 +3,10 @@
 
 /**
  * print_times_table - prints multiplication table
- * @n: print this int
  *
  * Return: Always 0
  */
-void print_times_table(int n)
+int main(void)
 {
 	print_times_table(15);
 	return (0);
