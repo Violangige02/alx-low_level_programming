@@ -2,13 +2,20 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * print_times_table - prints multiplication table
+ * @n: the int to print
  *
- * Return: Always 0
+ * main - main block
+ * prints multiplication table of 15
+ *
+ * Return: Always 0.
  */
+void print_times_table(int n)
+{
+	_putchar ('\n');
+}
 int main(void)
 {
 	print_times_table(15);
-	_putchar ('\n');
 	return (0);
 }
