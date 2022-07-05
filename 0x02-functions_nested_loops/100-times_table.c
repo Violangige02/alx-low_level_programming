@@ -2,12 +2,13 @@
 #include <stdio.h>
 
 /**
- * print_times_table - prints multiplication table
+ * main - Entry point
  *
  * Return: Always 0
  */
 int main(void)
 {
 	print_times_table(15);
+	_putchar ('\n');
 	return (0);
 }
