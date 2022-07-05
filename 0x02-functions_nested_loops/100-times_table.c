@@ -3,15 +3,12 @@
 
 /**
  * print_times_table - prints multiplication table
- * @n: the int to print
+ * @n: print this int
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 void print_times_table(int n)
 {
-	for (n = 0; n <= 15; n++)
-	{
-		_putchar ('\n');
-		return (0);
-	}
+	print_times_table(15);
+	return (0);
 }
