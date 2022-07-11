@@ -3,50 +3,35 @@
 /**
  * rev_string - Reverse a string
  * @s: String to reverse
+ *
  * Return: Nothing
  */
 
 void rev_string(char *s)
 {
-	int i = 0, length;
+	int i, tmp, len = _strlen(s);
 
-	length = _strlen(s) - 1;
-
-	while (length > 1)
+	for (i = 0; i < len / 2; i++)
 	{
-		swap_char(s + length, s + i);
-		i++;
-		length--;
+		tmp = *(s + i);
+		*(s + i) = *(s + len - i - 1);
+		*(s + len - i - 1) = tmp;
 	}
 }
 
 /**
  * _strlen - returns the length of a string
  * @s: string
- * Return: returns length;
+ *
+ * Return: the length of the given string
  */
+
 int _strlen(char *s)
 {
-	int count, inc;
+	int len = 0;
 
-	inc = 0;
+	while (*(s + len) != '\0')
+		len++;
 
-	for (count = 0; s[count] != '\0'; count++)
-		inc++;
-
-	return (inc);
-}
-
-/**
- * swap_char - swap two characters
- * @a: first character
- * @b: second character
- * Return: nothing
- */
-
-void swap_char(char *a, char *b)
-{
-	char tmp = *a;
-	*a = *b;
-	*b = tmp;
+	return (len);
 }
