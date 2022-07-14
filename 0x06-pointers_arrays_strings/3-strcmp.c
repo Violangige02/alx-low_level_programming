@@ -1,13 +1,15 @@
 #include "nmain.h"
 
 /**
- * _strcmp - Function which compare two strings and
- * @s1: first string
- * @s2: second string
- * Return:
- *               returns zero if s1 == s2
- *               returns negative number if s1 < s2
- *               returns positive number if s1 > s2
+ * _strcmp - Compares pointers to two strings.
+ * @s1: A pointer to the first string to be compared.
+ * @s2: A pointer to the second string to be compred.
+ *
+ * Return: If str1 < str2, the negative difference of
+ * the first unmatched characters.
+ *        If s1 == s2, 0.
+ *        If s1 > s2, the positive difference of
+ *        the first unmatched characters.
  */
 
 int _strcmp(char *s1, char *s2)
